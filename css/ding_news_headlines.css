@@ -5,7 +5,7 @@
 .news-headlines-list li{background-color:#f2f2f2;} /*Baggrundsfarve lige linjenumre*/
 .news-headlines-list li:nth-of-type(2n+1) {background-color: #e8e8e8;}/*Baggrundsfarve ulige linjenumre*/
 .news-headlines-date {float: right;}
-.news-headlines-heading a {color: rgba(0,0,0,0.7);text-decoration: none;font-weight: bold;}
+.news-headlines-list .news-headlines-heading a {color: rgba(0,0,0,0.7);text-decoration: none;font-weight: bold;}
 @media only screen and (max-width: 768px){
 .news-headlines-list li {padding-bottom: 34px;}
 .news-headlines-list .news-headlines-heading{max-width: 100%;}
