@@ -1,4 +1,4 @@
-News Headlines
+Ding News Headlines
 =================
  * Introduction
  * Installation
