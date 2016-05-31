@@ -1,0 +1,89 @@
+# $Id$
+#
+# LANGUAGE translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  ding_news_headlines.views_default.inc: n/a
+#  ding_news_headlines.info: n/a
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-05-31 12:05+0200\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: ding_news_headlines.views_default.inc:249
+msgid "Master"
+msgstr ""
+
+#: ding_news_headlines.views_default.inc:250
+msgid "Important messages"
+msgstr ""
+
+#: ding_news_headlines.views_default.inc:251
+msgid "Se alle nyheder"
+msgstr ""
+
+#: ding_news_headlines.views_default.inc:252
+msgid "Indsend"
+msgstr ""
+
+#: ding_news_headlines.views_default.inc:253
+msgid "Gendan"
+msgstr ""
+
+#: ding_news_headlines.views_default.inc:254
+msgid "Sortér efter"
+msgstr ""
+
+#: ding_news_headlines.views_default.inc:255
+msgid "Stigende"
+msgstr ""
+
+#: ding_news_headlines.views_default.inc:256
+msgid "Faldende"
+msgstr ""
+
+#: ding_news_headlines.views_default.inc:257
+msgid "No important messages"
+msgstr ""
+
+#: ding_news_headlines.views_default.inc:258
+msgid "There are no important messages."
+msgstr ""
+
+#: ding_news_headlines.views_default.inc:259
+msgid "forfatter"
+msgstr ""
+
+#: ding_news_headlines.views_default.inc:260
+msgid "News headlines with category (frontpage)"
+msgstr ""
+
+#: ding_news_headlines.views_default.inc:261 ding_news_headlines.info:0
+msgid "News list showing headlines and creation dates of news items of a specified news category."
+msgstr ""
+
+#: ding_news_headlines.views_default.inc:262
+msgid "See all important messages"
+msgstr ""
+
+#: ding_news_headlines.views_default.inc:263
+msgid "News panes"
+msgstr ""
+
+#: ding_news_headlines.info:0
+msgid "Ding News headlines"
+msgstr ""
+
+#: ding_news_headlines.info:0
+msgid "Ding!"
+msgstr ""
+
