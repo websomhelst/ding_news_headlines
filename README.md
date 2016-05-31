@@ -19,11 +19,11 @@ Installer og aktiver modulet som du plejer. Følg derefter beskrivelsen i CONFIU
 CONFIGRUATION 
 ---------------------
 1. Lav i eller ii
-  i. Hvis du vil bruge nyhedskategorien "Vigtige beskeder" og ikke har den i forvejen, skal du starte ned at oprette den:
+  1. Hvis du vil bruge nyhedskategorien "Vigtige beskeder" og ikke har den i forvejen, skal du starte ned at oprette den:
     * Gå til /admin/structure/taxonomy/news_category og klik på "Tilføj ord"
     * I feltet "Navn" skriv: Vigtige beskeder
     * Tryk "Gem"
-  ii. Hvis du vil bruge en anden kategori end "Vigtige beskeder", er du nødt til at ændre et par steder i det view, modulet opretter:
+  2. Hvis du vil bruge en anden kategori end "Vigtige beskeder", er du nødt til at ændre et par steder i det view, modulet opretter:
     * Gå til admin/structure/views/view/ding_news_headlines/edit
     * Under "PAGER" find "Mere-link" og klik på "Ja". Fjern hak i "Opret mere"-link, eftersom det linker til oversigten nyheder/vigtige-beskeder. Tryk "Anvend (dette display)"
     * Under "TITEL" ud for "Titel:" klik på linket "Vigtige beskeder". Skriv din nye tekst i feltet. Tryk "Anvend (dette display)"
