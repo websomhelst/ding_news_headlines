@@ -68,7 +68,7 @@ Du kan ændre flere ting ved listen, hvis du ikke er tilfreds med standardindsti
  * Tryk "Gem" for at gemme ændringerne i viewet
 
 Modulet er stylet til også at kunne håndtere et mere simpelt datoformat, 15/7 i stedet for 17. juli. Hvis du vil bruge det, skal du oprette nyt datoformat.
-*Opret nyt datoformat og skift til formatet
+* Opret nyt datoformat og skift til formatet
  * Gå til admin/config/regional/date-time/formats
  * Klik "Tilføj format" og skriv i feltet "Formatstreng": d/m
  * Tryk "Tilføj format"
