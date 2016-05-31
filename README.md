@@ -20,21 +20,21 @@ CONFIGRUATION
 ---------------------
 1. Lav i eller ii
   1. Hvis du vil bruge nyhedskategorien "Vigtige beskeder" og ikke har den i forvejen, skal du starte ned at oprette den:
-    * Gå til /admin/structure/taxonomy/news_category og klik på "Tilføj ord"
+    * Gå til admin/structure/taxonomy/news_category og klik på "Tilføj ord"
     * I feltet "Navn" skriv: Vigtige beskeder
-    * Tryk "Gem"
+    * Tryk "Gem" for at gemme ændringerne i viewet
   2. Hvis du vil bruge en anden kategori end "Vigtige beskeder", er du nødt til at ændre et par steder i det view, modulet opretter:
     * Gå til admin/structure/views/view/ding_news_headlines/edit
     * Under "PAGER" find "Mere-link" og klik på "Ja". Fjern hak i "Opret mere"-link, eftersom det linker til oversigten nyheder/vigtige-beskeder. Tryk "Anvend (dette display)"
     * Under "TITEL" ud for "Titel:" klik på linket "Vigtige beskeder". Skriv din nye tekst i feltet. Tryk "Anvend (dette display)"
     * Under "Avanceret" > "OPFØRSEL VED INGEN RESULTATER" ud for "Global:" klik på linket "Tekstområde (Ingen vigtige beskeder)" og tilpas teksten, så det passer til jer. Tryk "Anvend (dette display)"
-    * Gem viewet
+    * Tryk "Gem" for at gemme ændringerne i viewet
  
 2. Definér, hvilke(n) kategori(er) nyheder, widgetten skal vise:
  * Gå til admin/structure/views/view/ding_news_headlines/edit (hvis du ikke allerede er der)
  * Under "FILTRERINGSKRITERIER" Klik på linket "Indhold: Category(=[tilfældig kategori fra din hjemmeside])"
  * I listen "Vælg termer fra ordforrådet News Category" vælg "Vigtige beskeder" kategorien eller en anden kategori. Du kan godt vælge flere fra listen. Tryk "Anvend (dette display)"
- * Gem viewet 
+ * Tryk "Gem" for at gemme ændringerne i viewet
  
 3. Tilføj widget til forsiden
  * Struktur > Sider > Ud for [navnet på din forside. Fx ding_frontpage] tryk "Rediger" > Indhold
@@ -49,11 +49,23 @@ OTHER CUSTOMISATIONS
 ------------------------------
 Du kan ændre flere ting ved listen, hvis du ikke er tilfreds med standardindstillingerne, ved at ændre i dets view. Nedenfor er beskrevet et par almindelige eksempler.
 
+* DDB CMS: Fjern kategori fra den almindelige nyhedsoversigt på forsiden for at undgå at dublere nyheder
+ * Gå til admin/structure/views/view/ding_news/edit
+ * I dropdown menuen ud for "FILTRERINGSKRITERIER" vælg "tilføj"
+ * I feltet "Søg" skriv: category
+ * Sæt hak ud for Indhold: Category (field_ding_news_category) Optræder i: node:ding_news.
+ * Tryk "Anvend (dette display)"
+ * Sæt hak i "Rullemenu" og tryk "Anvend og fortsæt"
+ * Under "Operand" sæt hak ud for "Er ingen af"
+ * Under "Vælg termer fra ordforrådet News Category" sæt hak ud for den eller de kategorier, der ikke skal vises (dem der vises i den nye widget).
+ * Tryk "Anvend (dette display)"
+ * Tryk "Gem" for at gemme ændringerne i viewet
+
 * Ændr antallet af nyheder i oversigten
  * Gå til admin/structure/views/view/ding_news_headlines/edit (hvis du ikke allerede er der)
  * Under "Pager" Klik på "3 overskrifter". I linjen "Antal elementer" skriv hvor mange nyheder, listen skal vise.
  * Tryk "Anvend (dette display)"
- * Gem viewet
+ * Tryk "Gem" for at gemme ændringerne i viewet
 
 Modulet er stylet til også at kunne håndtere et mere simpelt datoformat, 15/7 i stedet for 17. juli. Hvis du vil bruge det, skal du oprette nyt datoformat.
 *Opret nyt datoformat og skift til formatet
@@ -66,7 +78,7 @@ Modulet er stylet til også at kunne håndtere et mere simpelt datoformat, 15/7 
  * Klik "Tilføj datotype"
  * Gå til admin/structure/views/view/ding_news_headlines/edit (hvis du ikke allerede er der)
  * Under "FELTER" klik på "Date" og vælg i dropdo´wn'en under "Datoformat" det datoformat, du vil bruge. Tryk "Anvend (dette display)".
- * Gem viewet
+ * Tryk "Gem" for at gemme ændringerne i viewet
 
 Du skal tømme cachen for, at ændringer slår igennem.
  
