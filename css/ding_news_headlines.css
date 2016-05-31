@@ -9,6 +9,6 @@
 @media only screen and (max-width: 768px){
 .news-headlines-list li {padding-bottom: 34px;}
 .news-headlines-list .news-headlines-heading{max-width: 100%;}
-.news-headlines-date {float: left;}
+.news-headlines-date {float: left;max-widht:100%;}
 } /*mobil visning*/
 /*End Vigtige beskeder widget*/
