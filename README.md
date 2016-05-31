@@ -13,32 +13,30 @@ Forsidewidget baseret på Ding News, der viser overskrift og dato fra nyheder af
 
 INSTALLATION
 -----------------
-Installer modulet som du plejer. Vent med at aktivere det, til du har gennemført 1 og 2 under CONFIGURATION.
+Installer og aktiver modulet som du plejer. Følg derefter beskrivelsen i CONFIURATION.
 
 
 CONFIGRUATION 
 ---------------------
 1. Lav i eller ii
- i. Hvis du vil bruge nyhedskategorien "Vigtige beskeder" og ikke har den i forvejen, skal du oprette den
-  * Gå til /admin/structure/taxonomy/news_category og klik på "Tilføj ord"
-  * I feltet "Navn" skriv: Vigtige beskeder
-  * Tryk "Gem"
- ii. Hvis du vil bruge en anden kategori end "Vigtige beskeder", er du nødt til at ændre et par steder i det view, modulet opretter.
-  * Gå til admin/structure/views/view/ding_news_headlines/edit
-  * Under "PAGER" find "Mere-link" og klik på "Ja". Fjern hak i "Opret mere"-link, eftersom det linker til oversigten nyheder/vigtige-beskeder. Tryk "Anvend (dette display)"
-  * Under "TITEL" ud for "Titel:" klik på linket "Vigtige beskeder". Skriv din nye tekst i feltet. Tryk "Anvend (dette display)"
-  * Under "Avanceret" > "OPFØRSEL VED INGEN RESULTATER" ud for "Global:" klik på linket "Tekstområde (Ingen vigtige beskeder)" og tilpas teksten, så det passer til jer. Tryk "Anvend (dette display)"
-  * Gem viewet
+  i. Hvis du vil bruge nyhedskategorien "Vigtige beskeder" og ikke har den i forvejen, skal du starte ned at oprette den:
+    * Gå til /admin/structure/taxonomy/news_category og klik på "Tilføj ord"
+    * I feltet "Navn" skriv: Vigtige beskeder
+    * Tryk "Gem"
+  ii. Hvis du vil bruge en anden kategori end "Vigtige beskeder", er du nødt til at ændre et par steder i det view, modulet opretter:
+    * Gå til admin/structure/views/view/ding_news_headlines/edit
+    * Under "PAGER" find "Mere-link" og klik på "Ja". Fjern hak i "Opret mere"-link, eftersom det linker til oversigten nyheder/vigtige-beskeder. Tryk "Anvend (dette display)"
+    * Under "TITEL" ud for "Titel:" klik på linket "Vigtige beskeder". Skriv din nye tekst i feltet. Tryk "Anvend (dette display)"
+    * Under "Avanceret" > "OPFØRSEL VED INGEN RESULTATER" ud for "Global:" klik på linket "Tekstområde (Ingen vigtige beskeder)" og tilpas teksten, så det passer til jer. Tryk "Anvend (dette display)"
+    * Gem viewet
  
 2. Definér, hvilke(n) kategori(er) nyheder, widgetten skal vise:
  * Gå til admin/structure/views/view/ding_news_headlines/edit (hvis du ikke allerede er der)
  * Under "FILTRERINGSKRITERIER" Klik på linket "Indhold: Category(=[tilfældig kategori fra din hjemmeside])"
  * I listen "Vælg termer fra ordforrådet News Category" vælg "Vigtige beskeder" kategorien eller en anden kategori. Du kan godt vælge flere fra listen. Tryk "Anvend (dette display)"
  * Gem viewet 
-
-3. Aktiver modulet 
  
-4. Tilføj widget til forsiden
+3. Tilføj widget til forsiden
  * Struktur > Sider > Ud for [navnet på din forside. Fx ding_frontpage] tryk "Rediger" > Indhold
  * Klik på tandhjul i venstre side af den kolonne, widget skal i.
  * Klik Tilføj indhold > News panes > View: News headlines: News headlines with category (frontpage) > Afslut
