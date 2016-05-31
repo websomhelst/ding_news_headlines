@@ -57,7 +57,7 @@ Du kan ændre flere ting ved listen, hvis du ikke er tilfreds med standardindsti
  * Tryk "Anvend (dette display)"
  * Sæt hak i "Rullemenu" og tryk "Anvend og fortsæt"
  * Under "Operand" sæt hak ud for "Er ingen af"
- * Under "Vælg termer fra ordforrådet News Category" sæt hak ud for den eller de kategorier, der ikke skal vises (dem der vises i den nye widget).
+ * Under "Vælg termer fra ordforrådet News Category" sæt hak ud for den eller de kategorier, der ikke skal vises (den der vises i den nye widget, fx "Vigtige beskeder").
  * Tryk "Anvend (dette display)"
  * Tryk "Gem" for at gemme ændringerne i viewet
 
