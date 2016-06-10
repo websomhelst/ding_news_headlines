@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2016-05-31 12:06+0200\n"
-"PO-Revision-Date: 2016-05-31 12:06+0200\n"
+"POT-Creation-Date: 2016-05-31 12:15+0200\n"
+"PO-Revision-Date: 2016-06-09 15:02+0200\n"
 "Last-Translator: Tina Skjærbæk Søeborg <tse@hvidovre.dk>\n"
 "Language-Team: Danish <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -28,28 +28,28 @@ msgid "Important messages"
 msgstr "Vigtige beskeder"
 
 #: ding_news_headlines.views_default.inc:251
-msgid "Se alle nyheder"
-msgstr ""
+msgid "See all news"
+msgstr "Se alle nyheder"
 
 #: ding_news_headlines.views_default.inc:252
-msgid "Indsend"
-msgstr ""
+msgid "Submit"
+msgstr "Indsend"
 
 #: ding_news_headlines.views_default.inc:253
-msgid "Gendan"
-msgstr ""
+msgid "Reset"
+msgstr "Gendan"
 
 #: ding_news_headlines.views_default.inc:254
-msgid "Sortér efter"
-msgstr ""
+msgid "Sort by"
+msgstr "Sortér efter"
 
 #: ding_news_headlines.views_default.inc:255
-msgid "Stigende"
-msgstr ""
+msgid "Ascending"
+msgstr "Stigende"
 
 #: ding_news_headlines.views_default.inc:256
-msgid "Faldende"
-msgstr ""
+msgid "Descending"
+msgstr "Faldende"
 
 #: ding_news_headlines.views_default.inc:257
 msgid "No important messages"
@@ -64,18 +64,14 @@ msgid "forfatter"
 msgstr ""
 
 #: ding_news_headlines.views_default.inc:260
-msgid "News headlines with category (frontpage)"
-msgstr "Nyhedsoverskrifter med kategori (forside)"
+msgid "News headlines (frontpage)"
+msgstr "Nyhedsoverskrifter (forside)"
 
 #: ding_news_headlines.views_default.inc:261 ding_news_headlines.info:0
 msgid "News list showing headlines and creation dates of news items of a specified news category."
 msgstr "Nyhedsoversigt der viser overskrifter og oprettelsesdato fra nyheder af en bestemt kategori"
 
 #: ding_news_headlines.views_default.inc:262
-msgid "See all important messages"
-msgstr "Se ældre vigtige beskeder"
-
-#: ding_news_headlines.views_default.inc:263
 msgid "News panes"
 msgstr ""
 

@@ -26,7 +26,7 @@ function ding_news_headlines_views_default_views() {
   $handler->display->display_options['css_class'] = 'news-list';
   $handler->display->display_options['use_more'] = TRUE;
   $handler->display->display_options['use_more_always'] = FALSE;
-  $handler->display->display_options['use_more_text'] = 'Se alle nyheder';
+  $handler->display->display_options['use_more_text'] = 'See all news';
   $handler->display->display_options['link_display'] = 'custom_url';
   $handler->display->display_options['link_url'] = 'nyheder';
   $handler->display->display_options['access']['type'] = 'perm';
@@ -34,11 +34,11 @@ function ding_news_headlines_views_default_views() {
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['query']['options']['query_comment'] = FALSE;
   $handler->display->display_options['exposed_form']['type'] = 'basic';
-  $handler->display->display_options['exposed_form']['options']['submit_button'] = 'Indsend';
-  $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'Gendan';
-  $handler->display->display_options['exposed_form']['options']['exposed_sorts_label'] = 'Sortér efter';
-  $handler->display->display_options['exposed_form']['options']['sort_asc_label'] = 'Stigende';
-  $handler->display->display_options['exposed_form']['options']['sort_desc_label'] = 'Faldende';
+  $handler->display->display_options['exposed_form']['options']['submit_button'] = 'Submit';
+  $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'Reset';
+  $handler->display->display_options['exposed_form']['options']['exposed_sorts_label'] = 'Sort by';
+  $handler->display->display_options['exposed_form']['options']['sort_asc_label'] = 'Ascending';
+  $handler->display->display_options['exposed_form']['options']['sort_desc_label'] = 'Descending';
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '3';
   $handler->display->display_options['pager']['options']['offset'] = '0';
@@ -81,7 +81,7 @@ function ding_news_headlines_views_default_views() {
   $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['created']['element_wrapper_type'] = '0';
   $handler->display->display_options['fields']['created']['element_default_classes'] = FALSE;
-  $handler->display->display_options['fields']['created']['date_format'] = 'dato_simpel_bruges_i_forsidewidgets_';
+  $handler->display->display_options['fields']['created']['date_format'] = 'ding_material_lists_date';
   $handler->display->display_options['fields']['created']['second_date_format'] = 'ding_date_only';
   $handler->display->display_options['fields']['created']['timezone'] = 'Europe/Copenhagen';
   /* Sorteringskriterie: Indhold: Klæbrig */
@@ -123,8 +123,8 @@ function ding_news_headlines_views_default_views() {
   $handler->display->display_options['filters']['field_ding_news_category_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_ding_news_category_tid']['vocabulary'] = 'news_category';
 
-  /* Display: News headlines with category (frontpage) */
-  $handler = $view->new_display('panel_pane', 'News headlines with category (frontpage)', 'news_headlines_with_category_frontpage');
+  /* Display: News headlines (frontpage) */
+  $handler = $view->new_display('panel_pane', 'News headlines (frontpage)', 'news_headlines_frontpage');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Important messages';
   $handler->display->display_options['defaults']['css_class'] = FALSE;
@@ -135,10 +135,10 @@ function ding_news_headlines_views_default_views() {
   $handler->display->display_options['defaults']['use_more_always'] = FALSE;
   $handler->display->display_options['use_more_always'] = TRUE;
   $handler->display->display_options['defaults']['use_more_text'] = FALSE;
-  $handler->display->display_options['use_more_text'] = 'See all important messages';
+  $handler->display->display_options['use_more_text'] = 'See all news';
   $handler->display->display_options['defaults']['link_display'] = FALSE;
   $handler->display->display_options['link_display'] = 'custom_url';
-  $handler->display->display_options['link_url'] = 'nyheder/vigtige-beskeder';
+  $handler->display->display_options['link_url'] = 'nyheder';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '3';
@@ -246,21 +246,20 @@ function ding_news_headlines_views_default_views() {
   $handler->display->display_options['allow']['exposed_form'] = 0;
   $handler->display->display_options['allow']['fields_override'] = 0;
   $translatables['ding_news_headlines'] = array(
-    t('Master'),
-    t('Important messages'),
-    t('Se alle nyheder'),
-    t('Indsend'),
-    t('Gendan'),
-    t('Sortér efter'),
-    t('Stigende'),
-    t('Faldende'),
-    t('No important messages'),
-    t('There are no important messages.'),
-    t('forfatter'),
-    t('News headlines with category (frontpage)'),
-    t('News list showing headlines and creation dates of news items of a specified news category.'),
-    t('See all important messages'),
-    t('News panes'),
+	  t('Master'),
+	  t('Important messages'),
+	  t('See all news'),
+	  t('Submit'),
+	  t('Reset'),
+	  t('Sort by'),
+	  t('Ascending'),
+	  t('Descending'),
+	  t('No important messages'),
+	  t('There are no important messages.'),
+	  t('forfatter'),
+	  t('News headlines (frontpage)'),
+	  t('News list showing headlines and creation dates of news items of a specified news category.'),
+	  t('News panes'),
   );
   $export['ding_news_headlines'] = $view;
 
